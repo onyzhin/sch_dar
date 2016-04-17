@@ -1,8 +1,9 @@
 .button {
-	@extend %inline-middle;
-	min-width: 100px;
+	vertical-align: middle;
+	display: block;
+	max-width: 300px; 
 	height: $buttonHeight;
-	line-height: $buttonHeight;
+	line-height: $buttonHeight + 2px;
 	padding: 0 15px;
 	position: relative;
 	text-decoration: none;
@@ -10,28 +11,30 @@
 	text-transform: uppercase;
 	color: $buttonText;
 	font-family: $fontFamily;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 18px;
+	font-weight: 500;
 	background-color: $buttonColor;
   	box-shadow: inset 0px 0px 0px 0px $buttonColorHover;
-	border: 0px solid $buttonColor;
-	border-radius: 5px;
+	border: 2px solid $buttonColor; 
+	border-radius: 0px;
 	outline: none;
 	z-index: 2;
 	cursor: pointer;
+	margin: 0 auto;
 
 	&:hover{
 		background: $buttonColorHover;
+		border: 2px solid $buttonColorHover;
 		color: $buttonText;
 	}
 	&.btn-outline{ 
-		border: 1px solid $buttonColorHover;
+		border: 2px solid $buttonColorHover;
 		background: transparent;
 		color: $buttonColorHover;
 
 		&:hover{
 			color: $buttonText;
-			border: 1px solid $buttonColorHover;
+			border: 2px solid $buttonColorHover;
 			background: $buttonColorHover;
 		}
 	}

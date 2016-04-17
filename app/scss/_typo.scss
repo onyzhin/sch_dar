@@ -3,20 +3,32 @@
 	display: block;
 	font-weight : normal;
 	margin-bottom : 1em;
-	color : $ctextColor;
+	color : $activeColor;
 } 
 
 a{
 	@extend %link;
 	border:0;
+	text-decoration: none;
+	color : $activeColor;
 
-	&:hover{color:$baseColorHover;text-decoration: none;}
+	&:hover{color : $activeColor;text-decoration: none;}
 }
 
 .mainheading,.ctext h1,h1{
 	@extend %heading;
-	font-size: 30px;
+	font-size: 50px;
+	font-weight: 500;
 	margin-bottom: 25px;
+	color: $activeColor;
+	text-align: center;
+	text-transform: uppercase;
+	span{
+		position: relative;
+		@extend %inline-middle;
+		border-top: 2px solid $activeColor;
+		border-bottom: 2px solid $activeColor;
+	}
 }
 .subheading,.ctext h2,h2{
 	@extend %heading;
@@ -29,6 +41,8 @@ a{
 .fourheading,.ctext h4,h4{
 	@extend %heading;
 	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 .fiveheading,.ctext h5,h5{
 	@extend %heading;

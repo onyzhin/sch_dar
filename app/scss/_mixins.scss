@@ -1,4 +1,4 @@
-@function pxtopercent($target, $parent: 16) {
+@function pxtopercent($target, $parent: $containerNum) {
   @return percentage($target / $parent);
 } 
 @function px($sizePx, $size100:16) {

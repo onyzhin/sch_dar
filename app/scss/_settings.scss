@@ -1,15 +1,17 @@
-$fontFamily:  arial, sans-serif;
-$baseColor : #000; 
-$baseColorHover : #000; 
-$ctextColor : #242424; 
+$fontFamily:  'Fira Sans', sans-serif;
+$baseColor : #424242; 
+$baseColorHover : #424242; 
+$ctextColor : #424242; 
 $titleSize : 1.2em;
 $bodyBackground : #fff;
 $bodyFontSize : 14px;
-$container : 960px;
+$container : 1030px;
+$containerNum : 1030;
 $minContainer : 320px;
+$activeColor: #0d5529;
 
 /*buttons*/
-$buttonHeight: 40px;
-$buttonColor : rgb(138, 0, 78);
-$buttonColorHover : #a4025e;
+$buttonHeight: 60px;
+$buttonColor : #0d5529;
+$buttonColorHover : #158040;
 $buttonText : #fff;

@@ -1,0 +1,47 @@
+.media{
+	&-list{
+		margin-left: 30px;
+		margin-right: 30px;
+		@extend %clear;
+	} 
+	&-item{
+		float: left;
+		padding-right: 30px;
+		padding-left: 30px;
+		width: 33.33%;
+		&-inner{
+			&>h4{
+				text-align: center;
+				height: 70px;
+				margin-bottom: 25px;
+				overflow: hidden;
+				a{
+					color: $activeColor;
+				}
+			}
+			time{
+				font-size: 11px;
+				text-align: center;
+				display: block;
+			}
+		}
+		&-content{
+			background: #f6f2ea;
+			padding: 5px;
+			p{
+				color: #000;
+			}
+			.detail{
+				text-align: left;
+				margin-bottom: 0;
+			}
+		}
+		&-visible{
+
+
+		}
+		&-hidden{
+
+		}
+	}
+}

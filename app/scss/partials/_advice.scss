@@ -1,0 +1,34 @@
+.advice{
+	background-color: #eae7da;
+	background-image: url(../img/advice-bg.png);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat; 
+	padding: 90px 0 25px 0;
+	&-list{
+		margin: -15px;
+		margin-right: -15px;
+		@extend %clear;
+		margin-bottom: 2px;
+	}
+	&-item{
+		float: left;
+		padding-right: 15px;
+		padding-left: 15px;
+		width: 33.33%;
+		text-align: center;
+		display: table;
+		margin-bottom: 32px;
+		&-inner{
+			background: #f6f2ea;
+			height: 150px;
+			padding: 15px 10%;
+			overflow: hidden;
+			display: table-cell;
+			vertical-align: middle;
+			h4{
+				margin-bottom: 0;		
+			}
+		}
+	}
+}

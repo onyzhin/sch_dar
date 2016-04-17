@@ -1,19 +1,32 @@
 .header{
+	background: #f6f2ea;
+	&-logo{
+		float: left;
+		position: relative;
+		max-height: 80px;
+		img{
+		}
+	}
 	&-menu{   
 		position: relative;
 		z-index: 2;
-		background: #D0D0D0;
-		margin-bottom: 20px;
+		width: pxtopercent(700);
+		margin-left: pxtopercent(230);
+		@extend %clear;
 		ul{
-			display: table;
+			display: block;
 			width: 100%;
 			li{
-				display: table-cell;
-				vertical-align: middle;
+				float: left;
 				text-align: center;
-				height: 30px;
 				a{
+					line-height: 80px;
 					text-decoration: none;
+					color: $activeColor;
+					font-size: 18px;
+					font-weight: 500;
+					text-transform: uppercase;
+					padding: 0 25px;
 				}
 				&.active,
 				& a:hover{ 
@@ -21,10 +34,28 @@
 				}
 				&:first-child{
 					text-align: left;
+					a{
+						padding-left: 0;
+					}
 				}
 				&:last-child{
 					text-align: right;
+					a{
+						padding-right: 0;
+					}
 				}
+			}
+		}
+	}
+	&-lang{
+		float: right;
+		a{
+			font-weight: 500;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: block;
+			&.active{
+
 			}
 		}
 	}

@@ -1,0 +1,18 @@
+.about{
+	background: #fbfaf7;
+	padding: 20px 0 0 0;
+	margin-bottom: 80px;
+	&-text{
+		max-width: 970px;
+		p{
+			font-size: 18px;
+			text-align: center;
+			em{
+				font-weight: 500;
+			}
+		}
+	}
+	&-image{
+		text-align: center;
+	}
+}
