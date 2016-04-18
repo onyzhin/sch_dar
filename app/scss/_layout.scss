@@ -47,11 +47,20 @@ body *{
 	height: 650px;
 }
 .news{	
-	margin-bottom: 40px;
+	margin-bottom: 32px;
+	.mainheading{
+	    margin-bottom: 35px;
+	}
 }
 .advice{	
-	margin-bottom: 40px;
+	margin-bottom: 93px;
+	.mainheading{
+	    margin-bottom: 54px;
+	}
 }
 .tests{	
-	margin-bottom: 40px;
+	margin-bottom: 50px;
+	.mainheading{
+        margin-bottom: 34px;
+	}
 }

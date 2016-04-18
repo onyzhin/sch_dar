@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*buttons*/
-.icon, .mainheading span, .ctext h1 span, h1 span {
+.icon, .mainheading span, .ctext h1 span, h1 span, .thirdheading span, .ctext h3 span, h3 span {
   display: inline-block;
   vertical-align: middle; }
 
@@ -17,6 +17,8 @@ a {
 .container:after,
 .button-group:after,
 .header-menu:after,
+.footer-row:after,
+.footer-col dl:after,
 .media-list:after,
 .advice-list:after {
   content: '';
@@ -27,9 +29,17 @@ a {
   overflow: hidden;
   display: block; }
 
-.icon, .mainheading span, .ctext h1 span, h1 span {
+.icon, .mainheading span, .ctext h1 span, h1 span, .thirdheading span, .ctext h3 span, h3 span {
   display: inline-block;
   vertical-align: middle; }
+
+.media-item-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
 
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
@@ -122,13 +132,19 @@ body * {
   height: 650px; }
 
 .news {
-  margin-bottom: 40px; }
+  margin-bottom: 32px; }
+  .news .mainheading {
+    margin-bottom: 35px; }
 
 .advice {
-  margin-bottom: 40px; }
+  margin-bottom: 93px; }
+  .advice .mainheading {
+    margin-bottom: 54px; }
 
 .tests {
-  margin-bottom: 40px; }
+  margin-bottom: 50px; }
+  .tests .mainheading {
+    margin-bottom: 34px; }
 
 /* fonts */
 .clear {
@@ -273,17 +289,29 @@ a {
   margin-bottom: 25px;
   color: #0d5529;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 27px; }
   .mainheading span, .ctext h1 span, h1 span {
     position: relative;
     border-top: 2px solid #0d5529;
-    border-bottom: 2px solid #0d5529; }
+    border-bottom: 2px solid #0d5529;
+    padding: 11px 0 4px 0; }
 
 .subheading, .form legend, .ctext h2, h2 {
   font-size: 25px; }
 
 .thirdheading, .ctext h3, h3 {
-  font-size: 22px; }
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left; }
+  .thirdheading span, .ctext h3 span, h3 span {
+    position: relative;
+    border-top: 1px solid #0d5529;
+    border-bottom: 1px solid #0d5529;
+    padding: 9px 0 5px 0;
+    min-width: 175px;
+    text-align: center; }
 
 .fourheading, .ctext h4, h4 {
   font-size: 18px;
@@ -549,18 +577,65 @@ a {
       text-transform: uppercase;
       display: block; }
 
+.footer {
+  background: #f6f2ea;
+  padding-top: 38px; }
+  .footer:before {
+    content: url(../img/footer-img-top.png);
+    position: absolute;
+    top: 0;
+    right: 20%; }
+  .footer:after {
+    content: url(../img/footer-img-bottom.png);
+    position: absolute;
+    bottom: 0;
+    left: 20%; }
+  .footer h3 {
+    margin-bottom: 32px; }
+  .footer-col {
+    width: 38.83495%;
+    float: left;
+    padding-right: 30px; }
+    .footer-col:last-child {
+      width: 19.41748%; }
+    .footer-col dl {
+      font-size: 18px;
+      margin-bottom: 29px; }
+      .footer-col dl dt {
+        text-align: right;
+        width: 33.33333%;
+        padding-right: 5%;
+        float: left;
+        line-height: 31px; }
+        .footer-col dl dt b {
+          font-weight: 500; }
+      .footer-col dl dd {
+        text-align: left;
+        width: 66.66667%;
+        float: left;
+        line-height: 31px; }
+  .footer-menu ul li {
+    margin-bottom: 18px; }
+    .footer-menu ul li a {
+      font-size: 18px;
+      font-weight: 500;
+      color: #424242; }
+  .footer-copyright {
+    float: left; }
+
 .popup-inner {
   padding: 20px 20px; }
 
 .about {
   background: #fbfaf7;
-  padding: 20px 0 0 0;
-  margin-bottom: 80px; }
+  padding: 13px 0 0 0;
+  margin-bottom: 96px; }
   .about-text {
     max-width: 970px; }
     .about-text p {
       font-size: 18px;
-      text-align: center; }
+      text-align: center;
+      line-height: 34px; }
       .about-text p em {
         font-weight: 500; }
   .about-image {
@@ -574,26 +649,45 @@ a {
   float: left;
   padding-right: 30px;
   padding-left: 30px;
-  width: 33.33%; }
+  width: 33.33%;
+  margin-bottom: 30px; }
   .media-item-inner > h4 {
     text-align: center;
     height: 70px;
-    margin-bottom: 25px;
-    overflow: hidden; }
+    margin-bottom: 23px;
+    overflow: hidden;
+    line-height: 24px; }
     .media-item-inner > h4 a {
       color: #0d5529; }
   .media-item-inner time {
     font-size: 11px;
     text-align: center;
-    display: block; }
+    display: block;
+    margin-bottom: 6px; }
   .media-item-content {
     background: #f6f2ea;
-    padding: 5px; }
+    padding: 5px;
+    position: relative;
+    overflow: hidden; }
     .media-item-content p {
-      color: #000; }
+      color: #000;
+      line-height: 17px; }
     .media-item-content .detail {
       text-align: left;
       margin-bottom: 0; }
+    .media-item-content:hover .media-item-hidden {
+      transform: translateY(0);
+      z-index: 3; }
+  .media-item-text {
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 3px; }
+  .media-item-hidden {
+    padding: 25px 22px 34px 22px;
+    background: #f6f2ea;
+    transform: translateY(-100%);
+    transition: 400ms all ease;
+    z-index: 0; }
 
 .advice {
   background-color: #eae7da;
@@ -601,7 +695,7 @@ a {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 90px 0 25px 0; }
+  padding: 94px 0 25px 0; }
   .advice-list {
     margin: -15px;
     margin-right: -15px;
@@ -623,6 +717,11 @@ a {
       vertical-align: middle; }
       .advice-item-inner h4 {
         margin-bottom: 0; }
+
+.tips {
+  background: #f4d03f; }
+  .tips .mainheading {
+    color: #fff; }
 
 @media (min-width: 1030px) {
   .container {

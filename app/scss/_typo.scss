@@ -23,11 +23,13 @@ a{
 	color: $activeColor;
 	text-align: center;
 	text-transform: uppercase;
+    margin-bottom: 27px;
 	span{
 		position: relative;
 		@extend %inline-middle;
 		border-top: 2px solid $activeColor;
 		border-bottom: 2px solid $activeColor;
+	    padding: 11px 0 4px 0;
 	}
 }
 .subheading,.ctext h2,h2{
@@ -36,7 +38,19 @@ a{
 }
 .thirdheading,.ctext h3,h3{
 	@extend %heading;
-	font-size: 22px;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: left; 
+	span{
+		position: relative;
+		@extend %inline-middle;
+		border-top: 1px solid $activeColor;
+		border-bottom: 1px solid $activeColor;
+	    padding: 9px 0 5px 0;
+	    min-width: 175px;	
+	    text-align: center;	
+	}
 }
 .fourheading,.ctext h4,h4{
 	@extend %heading;

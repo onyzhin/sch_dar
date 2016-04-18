@@ -9,12 +9,14 @@
 		padding-right: 30px;
 		padding-left: 30px;
 		width: 33.33%;
+		margin-bottom: 30px;
 		&-inner{
 			&>h4{
 				text-align: center;
 				height: 70px;
-				margin-bottom: 25px;
-				overflow: hidden;
+    			margin-bottom: 23px;
+				overflow: hidden; 
+				line-height: 24px;
 				a{
 					color: $activeColor;
 				}
@@ -23,25 +25,44 @@
 				font-size: 11px;
 				text-align: center;
 				display: block;
+				margin-bottom: 6px;
 			}
 		}
 		&-content{
 			background: #f6f2ea;
 			padding: 5px;
+			position: relative;
+			overflow: hidden;
 			p{
 				color: #000;
+			    line-height: 17px;
 			}
 			.detail{
 				text-align: left;
 				margin-bottom: 0;
 			}
+			&:hover,
+			&.active{
+				.media-item-hidden{
+					transform: translateY(0);
+					z-index: 3;
+				}
+			}
+		}
+		&-text{
+			overflow: hidden; 
+			height: 100%;
+			margin-bottom: 3px;
 		}
 		&-visible{
-
-
 		}
 		&-hidden{
-
+		    @extend %full;
+		    padding: 25px 22px 34px 22px;
+			background: #f6f2ea;
+			transform: translateY(-100%);
+			transition: 400ms all ease;
+			z-index: 0;
 		}
 	}
 }
