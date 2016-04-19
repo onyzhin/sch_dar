@@ -1,18 +1,5 @@
 .footer{
 	background: #f6f2ea;
-	padding-top: 38px;
-	&:before{
-		content: url(../img/footer-img-top.png);
-		position: absolute;
-		top: 0;
-		right: 20%;
-	}
-	&:after{
-		content: url(../img/footer-img-bottom.png);
-		position: absolute;
-		bottom: 0;
-		left: 20%;
-	}
 	h3{
 	    margin-bottom: 32px;
 	}
@@ -26,10 +13,41 @@
 		&:last-child{
 			width: pxtopercent(200);
 		}
+		&:nth-child(2){
+			.footer-copyright{
+				display: none;
+			}
+		}
+		@media (max-width:768px){ 
+			width: 50%;
+			padding-right: 0; 
+		} 
+		@media (max-width:480px){ 
+			width: 100%; 
+			&:first-child{
+				.footer-copyright{
+					display: none;
+				}
+			}
+			&:nth-child(2){
+				.footer-copyright{
+					display: block;
+					text-align: center;
+					float: none;
+					margin-bottom: 39px;
+				}
+			}
+		}
 		dl{
 			@extend %clear;
 			font-size: 18px;
 		    margin-bottom: 29px;
+			@media (max-width:768px){ 
+				font-size: 16px;
+			}
+			@media (max-width:480px){ 
+				margin-bottom: 15px;
+			}
 			dt{
 				text-align: right;
 				width: pxtopercent(100,300);
@@ -49,9 +67,11 @@
 		}
 	}
 	&-menu{
+		margin-bottom: 23px;
 		ul{
 			li{   
 			    margin-bottom: 18px;
+			    @extend %last;
 				a{
 					font-size: 18px;
 					font-weight: 500;
@@ -62,8 +82,76 @@
 	}
 	&-copyright{
 		float: left;
+		@extend .thirdheading;
+		color: $ctextColor; 
+	    margin-top: 39px;
+		@media (max-width:768px){ 
+			font-size: 16px;
+		}
 	}
-	&-socials{
-		
+	&-socials{	
+		@media (max-width:768px){ 
+			text-align: right;
+		}
+		@media (max-width:480px){ 
+			max-width: 30px;
+			float: right;
+			margin-bottom: 26px;
+		}
+	}
+	&-hidden{
+		display: none;
+		background: #e9e3d7;
+		padding: 25px 0;
+		.footer-menu{
+			margin-bottom: 0;
+			text-align: center;
+		}
+		@media (max-width:768px){ 
+			display: block;
+		}
+	}
+	&-main{
+		position: relative;
+		padding-top: 38px;
+		&:before{
+			content: '';
+			background: url(../img/footer-img-top.png) no-repeat center bottom;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			right: 25%;
+			width: 160px;
+			height: 98px;
+			@media (max-width:768px){ 
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				width: 150px;
+				height: 75px;
+			}
+		}
+		&:after{
+			content: '';
+			background: url(../img/footer-img-bottom.png) no-repeat center top;
+			background-size: cover;
+			position: absolute;
+			bottom: 0;
+			left: 28%;
+			width: 215px;
+			height: 107px;
+			@media (max-width:768px){ 
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				width: 150px;
+				height: 75px;
+			}
+		}
+		@media (max-width:768px){ 
+			.footer-col:last-child{
+				display: none;
+			}
+		}  
 	}
 }

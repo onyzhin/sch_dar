@@ -13,6 +13,7 @@ body *{
 }
 
 .main {
+	overflow: hidden;
 	.sidebar {
 		width: 180px;
 		float: left;

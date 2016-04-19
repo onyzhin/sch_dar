@@ -31,6 +31,9 @@ a{
 		border-bottom: 2px solid $activeColor;
 	    padding: 11px 0 4px 0;
 	}
+	@media (max-width:768px){ 
+		font-size: 40px;
+	}
 }
 .subheading,.ctext h2,h2{
 	@extend %heading;

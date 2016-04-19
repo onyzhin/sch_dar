@@ -4,6 +4,7 @@
 		float: left;
 		position: relative;
 		max-height: 80px;
+		top: 7px;
 		img{
 		}
 	}
@@ -12,13 +13,14 @@
 		z-index: 2;
 		width: pxtopercent(700);
 		margin-left: pxtopercent(230);
-		@extend %clear;
+		@extend %clear; 
 		ul{
 			display: block;
 			width: 100%;
 			li{
 				float: left;
 				text-align: center;
+			    padding-top: 5px;
 				a{
 					line-height: 80px;
 					text-decoration: none;
@@ -27,6 +29,10 @@
 					font-weight: 500;
 					text-transform: uppercase;
 					padding: 0 25px;
+					@media (min-width:768px) and (max-width: 960px){
+						font-size: 16px;
+						padding: 0 10px; 
+					}
 				}
 				&.active,
 				& a:hover{ 
@@ -49,13 +55,21 @@
 	}
 	&-lang{
 		float: right;
+		padding-top: 16px;
 		a{
 			font-weight: 500;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: block;
+			color: $baseColor;
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid transparent;
+		    line-height: 17px;
+    		padding: 2px 0 0px 0;
+    		margin-bottom: 10px;
+    		@extend %clear;
 			&.active{
-
+				border-color: $baseColor;
 			}
 		}
 	}

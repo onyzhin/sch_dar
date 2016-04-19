@@ -19,6 +19,12 @@
 		text-align: center;
 		display: table;
 		margin-bottom: 32px;
+		@media (max-width:768px){ 
+			width: 50%;
+		}
+		@media (max-width:480px){ 
+			width: 100%; 
+		}
 		&-inner{
 			background: #f6f2ea;
 			height: 150px;
@@ -26,8 +32,33 @@
 			overflow: hidden;
 			display: table-cell;
 			vertical-align: middle;
+			position: relative;
+			transition: 300ms all ease;
 			h4{
-				margin-bottom: 0;		
+				margin-bottom: 0;	
+				transition: 300ms all ease;	
+			}
+			&:hover{
+				background: $activeColor;
+				h4{
+					color: #fff;
+				}
+				.detail{
+					opacity: 1;
+					a{
+						color: $yellowColor;
+					}
+				}
+			}
+		}
+		.detail{
+			position: absolute;
+			left: 20px;
+			bottom: 14px;
+			opacity: 0;
+			transition: 300ms all ease;
+			a{
+				color: $yellowColor;
 			}
 		}
 	}
