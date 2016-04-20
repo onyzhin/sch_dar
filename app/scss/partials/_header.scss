@@ -1,5 +1,7 @@
 .header{
 	background: #f6f2ea;
+	position: relative;
+	z-index: 3;
 	&-logo{
 		float: left;
 		position: relative;

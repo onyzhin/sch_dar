@@ -6,8 +6,8 @@
 	background-repeat: no-repeat; 
 	padding: 94px 0 25px 0;
 	&-list{
-		margin: -15px;
-		margin-right: -15px;
+		margin-left: -15px;
+		margin-right: -15px; 
 		@extend %clear;
 		margin-bottom: 2px;
 	}

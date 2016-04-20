@@ -58,10 +58,87 @@ body *{
 	.mainheading{
 	    margin-bottom: 54px;
 	}
+	&.advice-inner{
+		background: none;
+		padding-top: 0;
+		padding-bottom: 0; 
+		margin-bottom: 30px;
+	}
 }
 .tests{	
 	margin-bottom: 50px;
 	.mainheading{
         margin-bottom: 34px;
+	}
+}
+
+.inner-page{
+	@media (max-width:768px){ 
+		padding-top: 30px;
+	}
+}
+
+.pattern{
+	height: 350px;
+	margin-bottom: 30px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 40px;
+	.mainheading{
+		color:#fff;
+		 text-shadow: 0px 0px 57px rgb( 0, 0, 0 );
+		span{
+			border-color:#fff;
+			@media (max-width:480px){ 
+				border-color:	$activeColor;
+			}
+		}
+
+		@media (max-width:768px){ 
+			display: table-cell;
+			vertical-align: middle;
+		}
+		@media (max-width:480px){ 
+			text-shadow:none;
+			color:$activeColor;
+			display: block;
+		}
+	}
+	@media (max-width:768px){ 
+		display: table;
+		width: 100%;
+		padding-top: 0;
+	}
+	@media (max-width:480px){ 
+		height: auto;
+		display: block;
+		background-image: none !important;
+		padding-top: 60px;
+	}
+}
+
+.breadcrumbs{
+    padding: 14px 0px; 
+	ul{ 
+	    margin-left: 22.3301%;
+		li{
+			float: left;
+			a,span{
+				font-size: 11px;
+				color: rgba( 66, 66, 66, 0.302 );
+			}
+			&:after{
+				content: url(../img/breadcrumbs-arrow.png);
+				margin: 0 8px;
+			}
+			&:last-child:after{
+				content:none;
+			}
+		}
+	}
+
+	@media (max-width:768px){ 
+		display: none;
 	}
 }

@@ -142,11 +142,74 @@ body * {
   margin-bottom: 93px; }
   .advice .mainheading {
     margin-bottom: 54px; }
+  .advice.advice-inner {
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 30px; }
 
 .tests {
   margin-bottom: 50px; }
   .tests .mainheading {
     margin-bottom: 34px; }
+
+@media (max-width: 768px) {
+  .inner-page {
+    padding-top: 30px; } }
+
+.pattern {
+  height: 350px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 40px; }
+  .pattern .mainheading {
+    color: #fff;
+    text-shadow: 0px 0px 57px black; }
+    .pattern .mainheading span {
+      border-color: #fff; }
+      @media (max-width: 480px) {
+        .pattern .mainheading span {
+          border-color: #0d5529; } }
+    @media (max-width: 768px) {
+      .pattern .mainheading {
+        display: table-cell;
+        vertical-align: middle; } }
+    @media (max-width: 480px) {
+      .pattern .mainheading {
+        text-shadow: none;
+        color: #0d5529;
+        display: block; } }
+  @media (max-width: 768px) {
+    .pattern {
+      display: table;
+      width: 100%;
+      padding-top: 0; } }
+  @media (max-width: 480px) {
+    .pattern {
+      height: auto;
+      display: block;
+      background-image: none !important;
+      padding-top: 60px; } }
+
+.breadcrumbs {
+  padding: 14px 0px; }
+  .breadcrumbs ul {
+    margin-left: 22.3301%; }
+    .breadcrumbs ul li {
+      float: left; }
+      .breadcrumbs ul li a, .breadcrumbs ul li span {
+        font-size: 11px;
+        color: rgba(66, 66, 66, 0.302); }
+      .breadcrumbs ul li:after {
+        content: url(../img/breadcrumbs-arrow.png);
+        margin: 0 8px; }
+      .breadcrumbs ul li:last-child:after {
+        content: none; }
+  @media (max-width: 768px) {
+    .breadcrumbs {
+      display: none; } }
 
 /* fonts */
 .clear {
@@ -304,7 +367,7 @@ a {
       font-size: 40px; } }
 
 .subheading, .form legend, .ctext h2, h2 {
-  font-size: 25px; }
+  font-size: 30px; }
 
 .thirdheading, .footer-copyright, .ctext h3, h3 {
   font-size: 20px;
@@ -503,7 +566,9 @@ a {
   transition: all 0.3s; }
 
 .header {
-  background: #f6f2ea; }
+  background: #f6f2ea;
+  position: relative;
+  z-index: 3; }
   .header-logo {
     float: left;
     position: relative;
@@ -770,7 +835,7 @@ a {
   background-repeat: no-repeat;
   padding: 94px 0 25px 0; }
   .advice-list {
-    margin: -15px;
+    margin-left: -15px;
     margin-right: -15px;
     margin-bottom: 2px; }
   .advice-item {
@@ -855,7 +920,7 @@ a {
 
 @media (max-width: 768px) {
   .header-menu .navbar-collapse {
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 10px 0; }
   .header-menu ul {
     display: block; }
     .header-menu ul li {
