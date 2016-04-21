@@ -14,14 +14,6 @@ body *{
 
 .main {
 	overflow: hidden;
-	.sidebar {
-		width: 180px;
-		float: left;
-	}
-	.content {
-		float: left;
-		width: 780px;
-	}
 }
 
 .footer {
@@ -119,7 +111,7 @@ body *{
 }
 
 .breadcrumbs{
-    padding: 14px 0px; 
+    padding: 18px 0px; 
 	ul{ 
 	    margin-left: 22.3301%;
 		li{

@@ -1,0 +1,44 @@
+.production{
+	background: #f6f2ea;
+	padding: 32px 40px;
+	margin-bottom: 48px;
+	&-slider{
+		margin-bottom: 0 !important;
+		outline: none;
+		.slick-slide{
+			outline: none;
+			p{
+				font-size: 14px;
+				line-height: 1.429;
+				text-align: center;
+				padding: 0 15px;
+			}
+			img{
+				margin: 0 auto 18px auto;
+			}
+		}
+		.slick-prev{
+			background: url(../img/arrow-green.png) !important;
+			width: 26px;
+			height: 26px;
+			&:before{
+				content: none;
+			}
+		}
+		.slick-next{
+			background: url(../img/arrow-green.png) !important;
+			width: 26px;
+			height: 26px;
+			transform: rotate(180deg);
+			&:before{
+				content: none;
+			}
+		}
+	} 
+	&-img{
+		background: #f6f2ea;
+		padding: 10px 10px;
+		margin-bottom: 25px;	
+		margin-top: 15px;	
+	}
+}
