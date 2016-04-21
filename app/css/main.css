@@ -20,7 +20,8 @@ a {
 .footer-row:after,
 .footer-col dl:after,
 .media-list:after,
-.advice-list:after {
+.advice-list:after,
+.production-tab:after {
   content: '';
   clear: both;
   font-size: 1px;
@@ -933,7 +934,7 @@ a {
       .production-slider .slick-slide img {
         margin: 0 auto 18px auto; }
     .production-slider .slick-prev {
-      background: url(../img/arrow-green.png);
+      background: url(../img/arrow-green.png) !important;
       width: 26px;
       height: 26px; }
       .production-slider .slick-prev:before {
@@ -950,6 +951,54 @@ a {
     padding: 10px 10px;
     margin-bottom: 25px;
     margin-top: 15px; }
+  .production-tab-item {
+    width: calc(50% - 15px);
+    float: left;
+    margin-right: 30px;
+    background: #f6f2ea;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 40px;
+    position: relative;
+    cursor: pointer; }
+    @media (max-width: 768px) {
+      .production-tab-item {
+        width: 100%;
+        float: none;
+        max-width: 500px;
+        margin-left: auto !important;
+        margin-right: auto !important; } }
+    .production-tab-item:last-child {
+      margin-right: 0; }
+      .production-tab-item:last-child h2 {
+        text-align: right; }
+    .production-tab-item-img {
+      position: relative;
+      margin-top: -63px; }
+      .production-tab-item-img img {
+        margin: 0 auto; }
+      @media (max-width: 480px) {
+        .production-tab-item-img {
+          margin-top: -40px; } }
+    .production-tab-item h2 {
+      line-height: 41px;
+      margin-bottom: 0;
+      padding: 0 5px;
+      text-transform: none; }
+      @media (max-width: 480px) {
+        .production-tab-item h2 {
+          font-size: 26px; } }
+    .production-tab-item.active:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 22px 22px 0 22px;
+      border-color: #f4d03e transparent transparent transparent;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      position: absolute; }
 
 @media (min-width: 1030px) {
   .container {

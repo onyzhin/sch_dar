@@ -146,10 +146,10 @@ function tabs(block){
 				$('[data-tab]',$wrap).removeClass('active').addClass('hidden');
 				$('[data-tab="'+tabid+'"]',$wrap).addClass('active').removeClass('hidden');
 			})
-			if ($('.active[data-tabId]',$wrap).length>0)
+			/*if ($('.active[data-tabId]',$wrap).length>0)
 				$('.active[data-tabId]',$wrap).click();
 			else
-				$('[data-tabId]:eq(0)',$wrap).click();
+				$('[data-tabId]:eq(0)',$wrap).click();*/
 		}
 	})
 }
