@@ -1098,6 +1098,18 @@ input[type=radio]:checked ~ .icon {
       margin: 0 auto;
       position: absolute; }
 
+.opinion-pattern {
+  background-size: cover;
+  background-position: center top;
+  border: 10px solid #f6f2ea;
+  min-height: 350px;
+  padding: 25px 20px; }
+  .opinion-pattern h2 {
+    text-transform: none;
+    text-align: center; }
+  .opinion-pattern p {
+    font-size: 16px; }
+
 @media (min-width: 1030px) {
   .container {
     width: 1030px;

@@ -1,0 +1,16 @@
+.opinion{
+	&-pattern{
+		background-size: cover;
+		background-position: center top;
+		border: 10px solid #f6f2ea;
+		min-height: 350px;
+		padding: 25px 20px;
+		h2{
+			text-transform: none;
+			text-align: center;
+		} 
+		p{
+			font-size: 16px;
+		}
+	}
+}
