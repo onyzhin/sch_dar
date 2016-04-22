@@ -21,6 +21,7 @@ a {
 .footer-col dl:after,
 .media-list:after,
 .advice-list:after,
+.testpanel:after,
 .production-tab:after {
   content: '';
   clear: both;
@@ -258,6 +259,18 @@ img {
   .social-icon_vk {
     background-position: -15px 0; }
 
+.icon-radio {
+  background-image: url(../img/radio.png);
+  background-position: left bottom;
+  width: 18px;
+  height: 18px; }
+
+.icon-radio-check {
+  background-image: url(../img/radio.png);
+  background-position: left top;
+  width: 18px;
+  height: 18px; }
+
 .button {
   vertical-align: middle;
   display: block;
@@ -329,7 +342,7 @@ img {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.mainheading, .ctext h1, h1, .subheading, .form legend, .ctext h2, h2, .thirdheading, .footer-copyright, .ctext h3, h3, .fourheading, .ctext h4, h4, .fiveheading, .ctext h5, h5 {
+.mainheading, .ctext h1, h1, .subheading, .form legend, .ctext h2, h2, .thirdheading, .footer-copyright, .ctext h3, h3, .fourheading, .ctext h4, h4, .fiveheading, .ctext h5, h5, .testpanel-box .mheading {
   display: block;
   font-weight: normal;
   margin-bottom: 1em;
@@ -385,7 +398,11 @@ a {
   text-transform: uppercase; }
 
 .fiveheading, .ctext h5, h5 {
-  font-size: 16px; }
+  font-size: 14px;
+  font-weight: 500;
+  color: #424242;
+  margin-bottom: 10px;
+  margin-top: 30px; }
 
 .ctext {
   margin-bottom: 45px; }
@@ -409,6 +426,10 @@ a {
           float: none;
           display: block;
           margin: 0 auto 15px auto; } }
+  .ctext time {
+    margin-bottom: 30px;
+    font-size: 11px;
+    display: block; }
   .ctext ul {
     margin: 0 0 24px 0; }
     .ctext ul:last-child {
@@ -463,6 +484,19 @@ a {
       font-size: 14px;
       display: block;
       margin-bottom: 15px; }
+
+input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+  left: -99999px;
+  top: -99999px; }
+
+input[type=radio]:checked ~ .icon {
+  background-image: url(../img/radio.png);
+  background-position: left top;
+  width: 18px;
+  height: 18px;
+  color: cyan; }
 
 .collapse {
   display: none; }
@@ -601,6 +635,14 @@ a {
         float: left;
         text-align: center;
         padding-top: 5px; }
+        .header-menu ul li.active-trail {
+          text-align: center; }
+          .header-menu ul li.active-trail a {
+            color: #424242;
+            border-top: 1px solid #424242;
+            border-bottom: 1px solid #424242;
+            text-align: center;
+            padding: 3px 0; }
         .header-menu ul li a {
           line-height: 80px;
           text-decoration: none;
@@ -916,6 +958,62 @@ a {
     @media (max-width: 768px) {
       .tips-link {
         position: static; } }
+
+.testpanel {
+  margin-bottom: 20px; }
+  .testpanel-img {
+    background: #f6f2ea;
+    padding: 5px;
+    float: left;
+    width: 29.12621%; }
+    @media (max-width: 768px) {
+      .testpanel-img {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none; } }
+  .testpanel-text {
+    float: left;
+    width: 62.13592%;
+    margin-left: 2.91262%; }
+    @media (max-width: 768px) {
+      .testpanel-text {
+        width: 100%;
+        margin-left: 0; } }
+  .testpanel-list {
+    margin-bottom: 25px; }
+  .testpanel-box {
+    background: #f6f2ea;
+    padding: 26px 20px;
+    margin-bottom: 50px; }
+    .testpanel-box .mheading {
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+      @media (max-width: 480px) {
+        .testpanel-box .mheading {
+          text-align: center; } }
+    .testpanel-box h4 {
+      color: #424242;
+      text-transform: none; }
+      @media (max-width: 480px) {
+        .testpanel-box h4 {
+          text-align: center; } }
+  .testpanel-item {
+    margin-bottom: 17px; }
+    .testpanel-item .icon {
+      margin-right: 6px; }
+    .testpanel-item label {
+      cursor: pointer; }
+    @media (max-width: 480px) {
+      .testpanel-item {
+        text-align: center; }
+        .testpanel-item span {
+          display: block;
+          padding-top: 8px; } }
 
 .production {
   background: #f6f2ea;

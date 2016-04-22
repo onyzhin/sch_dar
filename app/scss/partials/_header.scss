@@ -23,6 +23,16 @@
 				float: left;
 				text-align: center;
 			    padding-top: 5px;
+			    &.active-trail{
+			    	text-align: center;
+					a{
+						color: $baseColor;
+						border-top: 1px solid $baseColor;
+						border-bottom: 1px solid $baseColor;
+			    		text-align: center;
+			    		padding: 3px 0;
+					}
+			    }
 				a{
 					line-height: 80px;
 					text-decoration: none;

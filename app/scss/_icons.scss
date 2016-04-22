@@ -24,3 +24,16 @@
 		@include socIcon(-15px 0);
 	}
  }
+
+ .icon-radio{
+ 	background-image: url(../img/radio.png);
+	background-position: left bottom;
+	width: 18px;
+	height: 18px;
+ }
+ .icon-radio-check{
+ 	background-image: url(../img/radio.png);
+	background-position: left top;
+	width: 18px;
+	height: 18px; 
+ }
