@@ -4,13 +4,53 @@
 		background-position: center top;
 		border: 10px solid #f6f2ea;
 		min-height: 350px;
-		padding: 25px 20px;
+		padding: 25px 20px 180px 20px;
+		margin-bottom: -180px;
 		h2{
 			text-transform: none;
 			text-align: center;
 		} 
 		p{
 			font-size: 16px;
+		}
+	}
+	&-box{
+		background: url(../img/flower-bg.png) no-repeat 55% 37px;
+		min-height: 450px;  
+		position: relative;		
+		@media (max-width:480px){ 
+			background: transparent;
+		}
+		&-image{
+			width: 380px; 
+			height: 380px;
+			background: url(../img/flower.png);
+			background-size: cover;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			cursor: pointer;
+			@media (max-width:480px){ 
+				width: 280px;
+				height: 280px;
+			}
+		}
+		&-text{
+			width: 144px;
+			height: 144px;
+			background: url(../img/opinion-text.png);
+			background-size: cover;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			@media (max-width:480px){ 
+				width: 120px;
+				height: 120px;
+			}
 		}
 	}
 }
